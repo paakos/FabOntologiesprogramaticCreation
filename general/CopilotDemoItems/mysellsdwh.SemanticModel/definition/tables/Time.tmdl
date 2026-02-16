@@ -1,0 +1,112 @@
+table Time
+	lineageTag: 6e602759-b6cd-4429-a7be-760bb5d23258
+	sourceLineageTag: [dbo].[Time]
+
+	column TimeID
+		dataType: int64
+		isHidden
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c4dd36da-283e-4058-b874-1c1194a08cf6
+		sourceLineageTag: TimeID
+		summarizeBy: none
+		sourceColumn: TimeID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeBKey
+		dataType: string
+		sourceProviderType: varchar(8)
+		lineageTag: 999c7678-ef7c-421f-9d84-8ac7c0a741cf
+		sourceLineageTag: TimeBKey
+		summarizeBy: none
+		sourceColumn: TimeBKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column HourNumber
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1eb7bccc-1003-4cd0-92c3-c74e57490419
+		sourceLineageTag: HourNumber
+		summarizeBy: none
+		sourceColumn: HourNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column MinuteNumber
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f1a194fc-42fc-43e2-a293-73e2831ed393
+		sourceLineageTag: MinuteNumber
+		summarizeBy: none
+		sourceColumn: MinuteNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column SecondNumber
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 43b05ecb-2608-4833-a493-b9e2c9b5a9f1
+		sourceLineageTag: SecondNumber
+		summarizeBy: none
+		sourceColumn: SecondNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeInSecond
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 1091f5ab-040c-4b51-90f3-81c41300ad31
+		sourceLineageTag: TimeInSecond
+		summarizeBy: none
+		sourceColumn: TimeInSecond
+
+		annotation SummarizationSetBy = Automatic
+
+	column HourlyBucket
+		dataType: string
+		sourceProviderType: varchar(15)
+		lineageTag: 63affdb0-de46-4154-b619-ee3619d7fb13
+		sourceLineageTag: HourlyBucket
+		summarizeBy: none
+		sourceColumn: HourlyBucket
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayTimeBucketGroupKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 73f4d793-dde6-4f4d-9091-10068b518d3e
+		sourceLineageTag: DayTimeBucketGroupKey
+		summarizeBy: none
+		sourceColumn: DayTimeBucketGroupKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayTimeBucket
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 24573378-dccb-4c49-be2c-cef868006eb1
+		sourceLineageTag: DayTimeBucket
+		summarizeBy: none
+		sourceColumn: DayTimeBucket
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Time = entity
+		mode: directLake
+		source
+			entityName: Time
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataAgent",
+    "displayName": "RetailOntologyAgent"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bbfb1166-e6a4-a7af-46e2-3ec970d560e6"
+  }
+}

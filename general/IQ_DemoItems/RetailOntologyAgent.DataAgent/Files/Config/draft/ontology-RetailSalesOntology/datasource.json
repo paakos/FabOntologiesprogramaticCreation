@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "f8b0701d-c8f0-be27-4c73-98f9ae1c5653",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "RetailSalesOntology",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "Store",
+      "is_selected": true,
+      "display_name": "Store",
+      "type": "ontology.entity",
+      "description": "StoreId,StoreName,City,Region,Latitude,Longitude",
+      "children": []
+    },
+    {
+      "id": "Products",
+      "is_selected": true,
+      "display_name": "Products",
+      "type": "ontology.entity",
+      "description": "ProductId,ProductName,Category,Subcategory,Brand",
+      "children": []
+    },
+    {
+      "id": "SaleEvent",
+      "is_selected": true,
+      "display_name": "SaleEvent",
+      "type": "ontology.entity",
+      "description": "SaleId,SaleDate,StoreId,ProductId,Units,RevenueUSD",
+      "children": []
+    },
+    {
+      "id": "Freezer",
+      "is_selected": true,
+      "display_name": "Freezer",
+      "type": "ontology.entity",
+      "description": "FreezerId,timestamp,Model,temperatureC,minSafeTempC,humidityPct,StoreId,doorOpen",
+      "children": []
+    }
+  ]
+}
