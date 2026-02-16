@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "tripsAnalize"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "413c22ae-2cd4-9c0a-412a-0c46307b263e"
+  }
+}

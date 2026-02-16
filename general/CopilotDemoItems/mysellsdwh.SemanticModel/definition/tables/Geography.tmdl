@@ -1,0 +1,102 @@
+table Geography
+	lineageTag: 5fd95c6b-3d9e-4109-b9bd-788a8e555799
+	sourceLineageTag: [dbo].[Geography]
+
+	column GeographyID
+		dataType: int64
+		isHidden
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c1fa423a-86f6-409e-89e6-4133b648826f
+		sourceLineageTag: GeographyID
+		summarizeBy: none
+		sourceColumn: GeographyID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCodeBKey
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: 955d5c18-dfe1-4491-8094-eef0edb52a50
+		sourceLineageTag: ZipCodeBKey
+		summarizeBy: none
+		sourceColumn: ZipCodeBKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column County
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 27d8c7eb-212f-4bdc-93e7-1ccc358de354
+		sourceLineageTag: County
+		dataCategory: County
+		summarizeBy: none
+		sourceColumn: County
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 943e9abd-1077-462a-b483-0a2a645dd55d
+		sourceLineageTag: City
+		dataCategory: City
+		summarizeBy: none
+		sourceColumn: City
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: ece27d64-a216-4eb6-afda-1823a2eec930
+		sourceLineageTag: State
+		dataCategory: StateOrProvince
+		summarizeBy: none
+		sourceColumn: State
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 2df97700-96b1-43e1-ace9-6b07346ea76a
+		sourceLineageTag: Country
+		dataCategory: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column ZipCode
+		dataType: string
+		sourceProviderType: varchar(50)
+		lineageTag: 55d88937-49be-4058-9212-90254e3cb5f1
+		sourceLineageTag: ZipCode
+		dataCategory: PostalCode
+		summarizeBy: none
+		sourceColumn: ZipCode
+
+		changedProperty = DataCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Geography = entity
+		mode: directLake
+		source
+			entityName: Geography
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,29 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation PBI_ProTooling = ["WebModelingEdit","CopilotTooling"]
+
+ref table Date
+ref table Geography
+ref table HackneyLicense
+ref table Medallion
+ref table Time
+ref table Trip
+ref table Weather
+ref table vw_PaymentAnalysis
+ref table DropDate
+ref table Droptime
+ref table DropGeography
+
+ref cultureInfo en-US
+

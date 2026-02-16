@@ -1,0 +1,62 @@
+table Weather
+	lineageTag: 0d97a8dc-e436-43c0-9b55-02aa4483d3b0
+	sourceLineageTag: [dbo].[Weather]
+
+	column DateID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: dad78b1f-e84c-43cb-9ea2-bf566e994d71
+		sourceLineageTag: DateID
+		summarizeBy: count
+		sourceColumn: DateID
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyID
+		dataType: int64
+		isHidden
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: e66d70a3-65cc-4eb7-a488-cf47a4a52155
+		sourceLineageTag: GeographyID
+		summarizeBy: none
+		sourceColumn: GeographyID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrecipitationInches
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 827f5ff9-3f2f-4364-8331-c1872ed69b3e
+		sourceLineageTag: PrecipitationInches
+		summarizeBy: sum
+		sourceColumn: PrecipitationInches
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column AvgTemperatureFahrenheit
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 3c160e09-89a3-4666-9ee8-ca7a957f4bc3
+		sourceLineageTag: AvgTemperatureFahrenheit
+		summarizeBy: sum
+		sourceColumn: AvgTemperatureFahrenheit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Weather = entity
+		mode: directLake
+		source
+			entityName: Weather
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,35 @@
+relationship 035e1865-aed0-b75d-2560-9794941f5ddc
+	crossFilteringBehavior: bothDirections
+	fromColumn: Trip.DateID
+	toColumn: Date.DateID
+
+relationship 4032e034-cc1d-fc3a-4a13-8ef62cc44e9e
+	fromColumn: Trip.PickupGeographyID
+	toColumn: Geography.GeographyID
+
+relationship 3c73e3cb-3c34-79e9-be36-e248ebf47309
+	fromColumn: Trip.MedallionID
+	toColumn: Medallion.MedallionID
+
+relationship 736c2545-489b-f290-d7f9-75401020f2d4
+	fromColumn: Weather.GeographyID
+	toColumn: Geography.GeographyID
+
+relationship 25891bd4-8208-77cb-8750-a9e011981499
+	crossFilteringBehavior: bothDirections
+	fromColumn: Trip.PickupTimeID
+	toColumn: Time.TimeID
+
+relationship 0fbaf4cb-6130-fa2a-d1b6-85640f73aac2
+	fromColumn: Trip.HackneyLicenseID
+	toColumn: HackneyLicense.HackneyLicenseID
+
+relationship cd3961d6-7929-bb78-fe28-42fa7b0b6db5
+	crossFilteringBehavior: bothDirections
+	fromColumn: Trip.DropoffTimeID
+	toColumn: Droptime.TimeID
+
+relationship 7e740510-2f7c-2a68-ae79-5eeb62c7b071
+	fromColumn: Trip.DropoffGeographyID
+	toColumn: DropGeography.GeographyID
+

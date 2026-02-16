@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "cd1bb42d-e5ad-4cec-94c7-d6a7d2574327",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "26212a7b-e786-b5c5-4754-2e06698c1415",
+    "sourceTableName": "factsales",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "StoreId",
+      "targetPropertyId": "4203879811662849396"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "SaleId",
+      "targetPropertyId": "4208761674256075157"
+    }
+  ]
+}

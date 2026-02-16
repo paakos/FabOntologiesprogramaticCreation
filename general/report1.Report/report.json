@@ -1,0 +1,78 @@
+{
+  "config": "{\"version\":\"5.69\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY25SU12\",\"type\":2,\"version\":{\"visual\":\"2.5.0\",\"report\":\"3.1.0\",\"page\":\"2.3.0\"}}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY25SU12",
+            "path": "BaseThemes/CY25SU12.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "4b7b6ce00a4c0bd43e1c",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0a4f68f72d80008cde4a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":156,\"width\":544,\"height\":150,\"z\":3,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"DropGeography.State\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DropGeography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"},\"Name\":\"DropGeography.State\",\"NativeReferenceName\":\"State\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DropGeography\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'NY'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 544.00,
+          "x": 0.00,
+          "y": 156.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"891327a0e7d4e5dd2076\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":2,\"width\":616.9655172413793,\"height\":146.48275862068965,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Geography.County\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"Geography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"County\"},\"Name\":\"Geography.County\",\"NativeReferenceName\":\"County\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 146.48,
+          "width": 616.97,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"aa1514cd71ac72813b20\",\"layouts\":[{\"id\":0,\"position\":{\"x\":544,\"y\":156,\"width\":671,\"height\":150,\"z\":4,\"tabOrder\":4}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Geography.State\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"Geography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"State\"},\"Name\":\"Geography.State\",\"NativeReferenceName\":\"State\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"g\",\"Entity\":\"Geography\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'NY'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 150.00,
+          "width": 671.00,
+          "x": 544.00,
+          "y": 156.00,
+          "z": 4.00
+        },
+        {
+          "config": "{\"name\":\"cae3ecdd46c46dc7cc6a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":722.4827586206897,\"y\":0,\"z\":1,\"width\":544.3448275862069,\"height\":146.48275862068965,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"DropGeography.County\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DropGeography\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"County\"},\"Name\":\"DropGeography.County\",\"NativeReferenceName\":\"County\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 146.48,
+          "width": 544.34,
+          "x": 722.48,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"f435e888c6c201006a20\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":318.41379310344826,\"z\":0,\"width\":1214.6896551724137,\"height\":376.13793103448273,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"azureMap\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(Trip.TotalAmount)\"}],\"Tooltips\":[{\"queryRef\":\"Sum(Trip.TollsAmount)\"},{\"queryRef\":\"Sum(Trip.TipAmount)\"},{\"queryRef\":\"Sum(Trip.TaxAmount)\"}],\"Category\":[{\"queryRef\":\"DropGeography.County\",\"active\":true}],\"Series\":[{\"queryRef\":\"Geography.County\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Trip\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DropGeography\",\"Type\":0},{\"Name\":\"g\",\"Entity\":\"Geography\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TotalAmount\"}},\"Function\":0},\"Name\":\"Sum(Trip.TotalAmount)\",\"NativeReferenceName\":\"Sum of TotalAmount\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TollsAmount\"}},\"Function\":0},\"Name\":\"Sum(Trip.TollsAmount)\",\"NativeReferenceName\":\"Sum of TollsAmount\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TipAmount\"}},\"Function\":0},\"Name\":\"Sum(Trip.TipAmount)\",\"NativeReferenceName\":\"Sum of TipAmount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"County\"},\"Name\":\"DropGeography.County\",\"NativeReferenceName\":\"County\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"County\"},\"Name\":\"Geography.County\",\"NativeReferenceName\":\"County1\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TaxAmount\"}},\"Function\":0},\"Name\":\"Sum(Trip.TaxAmount)\",\"NativeReferenceName\":\"Sum of TaxAmount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"TotalAmount\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"mapControls\":[{\"properties\":{\"zoom\":{\"expr\":{\"Literal\":{\"Value\":\"3.68D\"}}},\"centerLatitude\":{\"expr\":{\"Literal\":{\"Value\":\"37.68756116935914D\"}}},\"centerLongitude\":{\"expr\":{\"Literal\":{\"Value\":\"-96.94190460608547D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 376.14,
+          "width": 1214.69,
+          "x": 0.00,
+          "y": 318.41,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
