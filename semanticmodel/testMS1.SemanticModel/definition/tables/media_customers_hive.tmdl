@@ -1,0 +1,50 @@
+table media_customers_hive
+	lineageTag: 3086f469-08e5-4a7c-bbda-e738dd9d3129
+	sourceLineageTag: [default].[media_customers_hive]
+
+	column review
+		dataType: string
+		lineageTag: 718de7e6-7fc6-4617-9d83-03d4cec4a354
+		sourceLineageTag: review
+		summarizeBy: none
+		sourceColumn: review
+
+		annotation SummarizationSetBy = Automatic
+
+	column franchiseID
+		dataType: int64
+		formatString: 0
+		lineageTag: 7e0b4a87-2e48-49fa-bccf-520098891933
+		sourceLineageTag: franchiseID
+		summarizeBy: count
+		sourceColumn: franchiseID
+
+		annotation SummarizationSetBy = Automatic
+
+	column review_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 97e25223-d3d2-49c2-84eb-7610ce1b6df8
+		sourceLineageTag: review_date
+		summarizeBy: none
+		sourceColumn: review_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_id
+		dataType: int64
+		formatString: 0
+		lineageTag: c1180f8c-6dbe-44be-a67f-ed0b2aa740c6
+		sourceLineageTag: new_id
+		summarizeBy: sum
+		sourceColumn: new_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition media_customers_hive = entity
+		mode: directLake
+		source
+			entityName: media_customers_hive
+			schemaName: default
+			expressionSource: 'DirectLake - dbxpaakos1'
+

@@ -1,0 +1,50 @@
+table new_table
+	lineageTag: a1c9b06e-8400-4954-b139-e3b5064315ba
+	sourceLineageTag: [default].[new_table]
+
+	column review
+		dataType: string
+		lineageTag: 35d644f1-fa4b-413d-bfcc-734436c57f24
+		sourceLineageTag: review
+		summarizeBy: none
+		sourceColumn: review
+
+		annotation SummarizationSetBy = Automatic
+
+	column franchiseID
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b01c12c-4414-471a-888a-84797f7f3629
+		sourceLineageTag: franchiseID
+		summarizeBy: count
+		sourceColumn: franchiseID
+
+		annotation SummarizationSetBy = Automatic
+
+	column review_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a3c33def-6bc8-46d5-8bdc-02fd9f643ed4
+		sourceLineageTag: review_date
+		summarizeBy: none
+		sourceColumn: review_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 769a1db0-d763-4362-a623-58d06893a7e4
+		sourceLineageTag: new_id
+		summarizeBy: sum
+		sourceColumn: new_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition new_table = entity
+		mode: directLake
+		source
+			entityName: new_table
+			schemaName: default
+			expressionSource: 'DirectLake - dbxpaakos1'
+

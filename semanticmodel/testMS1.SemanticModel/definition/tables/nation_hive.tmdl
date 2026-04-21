@@ -1,0 +1,49 @@
+table nation_hive
+	lineageTag: 92439384-a9fa-4c88-a387-06a15c17cc8b
+	sourceLineageTag: [default].[nation_hive]
+
+	column n_nationkey
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d4617da-42b6-4573-8834-5e9f106d362f
+		sourceLineageTag: n_nationkey
+		summarizeBy: sum
+		sourceColumn: n_nationkey
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_name
+		dataType: string
+		lineageTag: 2fe4e02b-cc88-485a-8801-e0d9e3778866
+		sourceLineageTag: n_name
+		summarizeBy: none
+		sourceColumn: n_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_regionkey
+		dataType: int64
+		formatString: 0
+		lineageTag: 6b47353b-cad2-4a84-aae9-cf844058a12b
+		sourceLineageTag: n_regionkey
+		summarizeBy: sum
+		sourceColumn: n_regionkey
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_comment
+		dataType: string
+		lineageTag: a4ecf530-055e-4780-a23c-0af39ed7af46
+		sourceLineageTag: n_comment
+		summarizeBy: none
+		sourceColumn: n_comment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition nation_hive = entity
+		mode: directLake
+		source
+			entityName: nation_hive
+			schemaName: default
+			expressionSource: 'DirectLake - dbxpaakos1'
+

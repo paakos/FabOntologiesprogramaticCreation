@@ -1,0 +1,58 @@
+table media_gold_reviews_chunked_hive
+	lineageTag: cb2d1565-f6f4-4961-9bd9-2a025eee1127
+	sourceLineageTag: [default].[media_gold_reviews_chunked_hive]
+
+	column franchiseID
+		dataType: int64
+		formatString: 0
+		lineageTag: 486f116c-c4c8-4510-bbef-e530940258ed
+		sourceLineageTag: franchiseID
+		summarizeBy: count
+		sourceColumn: franchiseID
+
+		annotation SummarizationSetBy = Automatic
+
+	column review_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 767f8ca1-9622-42a6-84ee-35f9718046ef
+		sourceLineageTag: review_date
+		summarizeBy: none
+		sourceColumn: review_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column chunked_text
+		dataType: string
+		lineageTag: c7f5dbe9-61f2-4e74-97e8-0a2f1a6a7788
+		sourceLineageTag: chunked_text
+		summarizeBy: none
+		sourceColumn: chunked_text
+
+		annotation SummarizationSetBy = Automatic
+
+	column chunk_id
+		dataType: string
+		lineageTag: b1377868-4848-4f5d-8c5b-0619db7da4b2
+		sourceLineageTag: chunk_id
+		summarizeBy: none
+		sourceColumn: chunk_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column review_uri
+		dataType: string
+		lineageTag: 06096743-2284-43cf-8846-5c771b837255
+		sourceLineageTag: review_uri
+		summarizeBy: none
+		sourceColumn: review_uri
+
+		annotation SummarizationSetBy = Automatic
+
+	partition media_gold_reviews_chunked_hive = entity
+		mode: directLake
+		source
+			entityName: media_gold_reviews_chunked_hive
+			schemaName: default
+			expressionSource: 'DirectLake - dbxpaakos1'
+
